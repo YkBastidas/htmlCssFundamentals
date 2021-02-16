@@ -9,36 +9,40 @@
         <title>Calendar</title>
     </head>
     <body>
-        <!-- Hard way to do a calendar -->
-        <form action="">
-            <label for="hour">
-                <span>Hour:</span>
-                <input type="time" id="hour" name="hour">
-                <!-- the 'name attribute it's mandatory to submit the form -->
-            </label>
-            <label for="day">
-                <span>Day:</span>
-                <input type="date" id="day" name="day">
-            </label>
-            <label for="week">
-                <span>Week:</span>
-                <input type="week" id="week" name="week">
-            </label>
-            <label for="month">
-                <span>Month:</span>
-                <input type="month" id="month" name="month">
-            </label>
-            <input type="submit">
-            <!-- Shows a button to submit the form -->
-        </form>
-        <!-- Easy way to do a calendar -->
-        <form action="">
-            <label for="calendar">
-                <span>Calendar</span>
-                <input type="datetime-local" name="calendar" id="calendar">
-            </label>
-            <input type="submit">
-        </form>
+        <div>
+            <!-- Hard way to do a calendar -->
+            <form action="">
+                <label for="hour">
+                    <span>Hour:</span>
+                    <input type="time" id="hour" name="hour">
+                    <!-- the 'name attribute it's mandatory to submit the form -->
+                </label>
+                <label for="day">
+                    <span>Day:</span>
+                    <input type="date" id="day" name="day">
+                </label>
+                <label for="week">
+                    <span>Week:</span>
+                    <input type="week" id="week" name="week">
+                </label>
+                <label for="month">
+                    <span>Month:</span>
+                    <input type="month" id="month" name="month">
+                </label>
+                <input type="submit">
+                <!-- Shows a button to submit the form -->
+            </form>
+        </div>
+        <div>
+            <!-- Easy way to do a calendar -->
+            <form action="">
+                <label for="calendar">
+                    <span>Calendar</span>
+                    <input type="datetime-local" name="calendar" id="calendar">
+                </label>
+                <input type="submit">
+            </form>
+        </div>
     </body>
 </html>
 
