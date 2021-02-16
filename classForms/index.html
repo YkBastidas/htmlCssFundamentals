@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page contains a shopping list">
+    <meta name="robots" content="index,follow">
+    <title>Forms</title>
+</head>
+<body>
+    <main>
+        <div>
+            <form action="">
+                <!-- Tells the browser that a form goes here and an user is going to send data to the server-->
+                <label for="name">
+                    <!-- Represents a caption in the UI -->
+                    <!-- The 'for' attribute is used to match a 'label' with an 'input' -->
+                    <span>What's Your Name?</span>
+                    <!-- We can use the 'span' tags to add a caption for the input -->
+                    <input type="text" id="name" placeholder="Your name">
+                    <!-- Allows the user to interact with the form -->
+                    <!-- The 'id' attribute must have the same value as the associated label -->
+                    <!-- It has several types available: text, date, checkbox, email, file, number, password, radio, range, reset, submit, etc.-->
+                    <!-- The 'placeholder' attribute sets an example text for the input -->
+                </label>
+                <label for="platzi-begin">
+                    <span>What day did you start in Platzi?</span>
+                    <input type="date" id="platzi-begin">
+                </label>
+                <label for="schedule">
+                    <span>What is your study schedule?</span>
+                    <input type="time" id="schedule">
+                </label>
+            </form>
+        </div>        
+    </main>
+</body>
+</html>
