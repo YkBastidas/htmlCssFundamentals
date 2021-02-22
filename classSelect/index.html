@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="robots" content="index,follow">
+        <title>Select</title>
+    </head>
+    <body>
+        <main>
+            <!-- 1st method, isn't the best way to do it -->
+            <select name="courses" id="">
+                <!-- select is used to create a dropdown with several options -->
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML5">HTML5</option>
+                <option value="CSS3">CSS3</option>
+                <option value="Web Standards">Web Standards</option>
+                <!-- The value attribute is what is sent by the form -->
+            </select>
+            <br>
+            <!-- 2nd method, it is the best practice -->
+            <input list="courses">
+                <!-- The list attribute lists the datalist's values with the same id -->
+            <datalist id="courses">
+                <!-- Allows the user to filter the options writing in the input -->
+                <option value="JavaScript"></option>
+                <option value="HTML5"></option>
+                <option value="CSS3"></option>
+                <option value="Web Standards"></option>
+            </datalist>
+        </main>
+    </body>
+</html>
