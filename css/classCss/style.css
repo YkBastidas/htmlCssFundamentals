@@ -1,0 +1,20 @@
+/* in CSS we modify HTML elements using selectors */
+
+/* element selector */
+p {
+    color: red;
+    font-size: 20px;
+}
+
+/* I'm a comment in CSS */
+
+/* class selector */
+.paragraph {
+    color: aquamarine;
+}
+
+/* id selector */
+#text {
+    color: blueviolet;
+    font-size: 21px;
+}

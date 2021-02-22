@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="robots" content="index,follow">
+        <title>CSS</title>
+        <!-- 1st way to apply CSS -->
+        <link rel="stylesheet" href="./style.css">
+        <!-- 2nd way to apply CSS, only for short, specific styles -->
+        <style>
+            p {
+                color: blue;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <!-- 3rd way to apply CSS, avoid if possible -->
+            <!-- Overwrites every style in our stylesheets -->
+            <p style="font-size: 30px;" class="paragraph">
+                I'm a text modified with CSS
+            </p>
+            <p id="text">I'm another text modified with CSS</p>
+        </main>
+    </body>
+</html>
