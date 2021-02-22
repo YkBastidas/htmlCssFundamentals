@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="robots" content="index,follow">
+        <title>Autocomplete and Require</title>
+    </head>
+    <body>
+        <main>
+            <form action="">
+                <label for="full-name">
+                    <span>Full Name</span>
+                    <input type="text" name="full-name" id="full-name" autocomplete="name" required>
+                    <!-- 'Autocomplete' tells the browser to complete the field automatically -->
+                    <!-- There are a lot of possible values for this attribute -->
+                    <!-- The 'required' attribute marks an input as mandatory for submit the form -->
+                </label>
+                <label for="email">
+                    <span>Email Address</span>
+                    <input type="email" name="email" id="email" autocomplete="email" required>
+                </label>
+                <label for="country">
+                    <span>Country</span>
+                    <input type="text" name="country" id="country" autocomplete="country" required>
+                </label>
+                <label for="postal-code">
+                    <span>Postal Code</span>
+                    <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" required>
+                </label>
+                <input type="submit">
+            </form>
+        </main>
+    </body>
+</html>
