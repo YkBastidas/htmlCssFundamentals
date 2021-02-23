@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+    background-color: aquamarine;
+    padding: 1vw;
+    font-size: 6vw;
+}
+
+figure {
+    width: 45vw;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    vertical-align: middle;
+}
+
+ul > li {
+    font-size: 5vw;
+}
+
+ol{
+    margin-bottom: 1vh;
+}
+
+figcaption {
+    font-size: 4vw;
+    font-style: italic;
+}
+
+
+
+li {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4vw;
+}
+
+a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #178f67;
+}
