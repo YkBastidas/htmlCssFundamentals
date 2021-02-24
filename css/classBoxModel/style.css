@@ -1,0 +1,19 @@
+* {
+  /* universal selector, changes all styles */
+  /* it is used to overwrite the default styles of the browser */
+  /* it's not the best practice, it's better to use 'normalize.css' */
+  box-sizing: border-box;
+    /* subtract width from padding and border to prevent horizontal scrolls */
+    /* if we add margins the scroll would happen, so we have to be careful */
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  height: 500px;
+  border: 10px solid gray; /* solid is the style of the border */
+  padding: 20px 35px; /* first value is vertical and second value is horizontal */
+    /* padding: 20px it's for every side of the content */
+    /* padding-top, padding-left, padding-bottom & padding-right to be more specific */
+}
