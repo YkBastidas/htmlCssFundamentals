@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wifth=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 id="page-title" class="title">Company</h1>
+        <!-- IDs are unique for every element, it can't be used more than once -->
+      <nav>
+        <ul id="main-nav" class="nav">
+          <li><a href="">Home</a></li>
+          <li><a href="">Courses</a></li>
+          <li><a href="">Teachers</a></li>
+          <li><a href="" style="/*background-color: orange;*/" class='blog'>Blog</a></li>
+            <!-- use embedded styles it's a bad practice -->
+            <!-- to change an specific element use classes in the css stylesheet -->
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
