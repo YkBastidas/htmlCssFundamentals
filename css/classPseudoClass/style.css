@@ -1,0 +1,34 @@
+.main-nav {
+  margin-top: 10px;
+  list-style: none; /* erase the bullet from a list element */
+  padding-left: 0; /* adds or reduces inner space to an element */
+  background-color: #13a4a4;
+}
+
+.main-nav__item {
+  display: inline-block; /* show the elements on a same line */
+}
+
+.main-nav__item a {
+  /* apply styles to every 'a' tag that's inside of the class */
+  color: white;
+  padding: 5px;
+  border-radius: 5px; /* rounds the corner of a box */
+  background-color: lightcoral;
+  text-decoration: none;
+}
+
+.main-nav__item a:hover {
+  /* it's a pseudo-class, sets the style of an especial state of an element */
+  /* 'hover' is a pseudoclass that activates when the mouse is over the element */
+  color: #263dbe;
+}
+
+.main-nav__item a:active {
+  color: red;
+}
+
+.main-nav__item a::after {
+  /* it's a pseudo-element, sets the style of an specific part of an element  */
+  content: " | "; /* adds a text content to the element */
+}
