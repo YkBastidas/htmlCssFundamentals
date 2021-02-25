@@ -1,0 +1,24 @@
+/* adjacent sibling combinator */
+.adjacent-sibling h2 + p {
+  /* select every p tag that is next to an h2 tag */
+  color: aqua;
+}
+
+/* general sibling combinator */
+.general-sibling h2 ~ p {
+  /* apply styles to every p tag that has an h2 brother (in the same line) */
+  color: blue;
+}
+
+/* child combinator */
+.child div > p {
+  /* apply styles to a p tag that is a direct child from a div tag */
+  color: chartreuse;
+}
+
+/* descendant combinator */
+div h1 {
+  /* apply styles to every h1 tag that is inside a div tag in any level */
+  color: darkgoldenrod;
+  font-style: italic;
+}
