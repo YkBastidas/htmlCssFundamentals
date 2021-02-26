@@ -1,0 +1,39 @@
+/* Apply border-box when using normalize.css */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+main {
+  /* occupies 100% of width and height of viewport */
+  width: 100vw;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+section {
+  width: 80%;
+  /* set a minimun width, so size won't change in smaller viewports */
+  min-width: 320px;
+  /* set a maximun width to prevent growth in larger viewports*/
+  max-width: 500px;
+  min-height: 500px;
+  /* 0 margin vertical an center the element in horizontal */
+  margin: 0 auto;
+  background-color: brown;
+}
+
+p {
+  font-size: 1.6rem;
+}
