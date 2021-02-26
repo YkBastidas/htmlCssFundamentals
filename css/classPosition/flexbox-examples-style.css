@@ -1,0 +1,144 @@
+/* Apply border-box when using normalize.css */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+
+/* CSS Code */
+
+/* Perfect Centering */
+.parent {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  background-color: antiquewhite;
+
+  /* centering the parent for visual purposes */
+  margin: auto;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background-color: aquamarine;
+}
+
+/* Even Horizontal Distribution */
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction
+    and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+
+  /* Some styling to default margins from ul */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* optional styling of every item of the list */
+.flex-item {
+  background: aquamarine;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* Navigation alignment for different viewport size */
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+
+  font-weight: bold;
+  text-align: center;
+}
+
+/* We tell all items to be 100% width, via flex-basis */
+.wrapper > * {
+  flex: 1 100%;
+
+  padding: 10px;
+}
+
+.header {
+  background-color: tomato;
+}
+
+.footer {
+  background-color: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background-color: deepskyblue;
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: hotpink;
+}
+
+
+/* We rely on source order for mobile-first approach
+  * in this case:
+  * 1. header
+  * 2. article
+  * 3. aside 1
+  * 4. aside 2
+  * 5. footer
+  */
+
+/* Medium screens */
+@media all and (min-width:600px) {
+  /* We tell both sidebars to share a row */
+  .aside {
+    flex: 1 auto;
+  }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+    * And tell the main element to take twice as much width as the other two sidebars
+  */
+  .main { flex: 2 0px;}
+  .aside-1 { order: 1; }
+  .main { order: 2; }
+  .aside-2 { order:3; }
+  .footer { order:4; }
+}

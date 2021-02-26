@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A set of flexbox examples by css-tricks">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="./flexbox-examples-style.css">
+    <title>Flexbox Examples</title>
+  </head>
+  <header>
+    <h1>Flexbox Examples by 
+      <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">css-tricks.com</a>
+    </h1>
+  </header>
+  <body>
+    <main>
+      <section>
+        <h2>Perfect Centering</h2>
+        <blockquote>
+          Let’s start with a very very simple example, solving an almost daily problem: perfect centering.
+        </blockquote>
+        <div class="parent">
+          <div class="child"></div>
+        </div>
+      </section>
+      <section>
+        <h2>Even Distribution on the Horizontal Axis</h2>
+        <blockquote>
+          Consider a list of 6 items, all with fixed dimensions, but can be auto-sized. We want them to be evenly distributed on the horizontal axis so that when we resize the browser, everything scales nicely, and without media queries.
+        </blockquote>
+        <ul class="flex-container">
+          <li class="flex-item">1</li>
+          <li class="flex-item">2</li>
+          <li class="flex-item">3</li>
+          <li class="flex-item">4</li>
+          <li class="flex-item">5</li>
+          <li class="flex-item">6</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Navigation alignment on different devices</h2>
+        <blockquote>
+          We have a right-aligned navigation element on the very top of our website, but we want it to be centered on medium-sized screens and single-columned on small devices.
+        </blockquote>
+        <div class="wrapper">
+          <header class="header">Header</header>
+          <article class="main">
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+          </article>
+          <aside class="aside aside-1">Aside 1</aside>
+          <aside class="aside aside-2">Aside 2</aside>
+          <footer class="footer">Footer</footer>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
