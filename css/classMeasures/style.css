@@ -4,6 +4,7 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *,
@@ -38,6 +39,6 @@ main {
 }
 
 .content__text_size_1rem {
-  font-size: 1rem;
+  font-size: 1.6rem;
     /* rem always reference the size of the root element (html) */
 }
