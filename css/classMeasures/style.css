@@ -1,0 +1,43 @@
+/* Apply border-box when using normalize.css */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 20px
+}
+
+main {
+  background-color: lightblue;
+  width: 100%;
+  height: 500px;
+}
+
+.content__text_size_18px {
+  font-size: 18px;
+}
+
+.content__text_size_50perc {
+  font-size: 50%;
+}
+
+.content__text_size_1dot5em {
+  font-size: 1.5em
+    /* 1em = direct parent font-size (20px) */
+}
+
+.content__text_size_1rem {
+  font-size: 1rem;
+    /* rem always reference the size of the root element (html) */
+}

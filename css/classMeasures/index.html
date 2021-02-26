@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../normalize.css">
+    <title>Measures</title>
+  </head>
+  <body>
+    <main class="content">
+      <!-- absolutes class -->
+      <p class="content__text content__text_size_18px">I'm 18px</p>
+      <p class="content__text content__text_size_50perc">I'm 50%</p>
+      
+      <!-- em class -->
+      <div class="content__text content__text_size_1dot5em">
+        <p>I'm 1.5em</p>
+        <div class="content__text content__text_size_1dot5em">
+          <p>I'm 1.5em</p>
+          <div class="content__text content__text_size_1dot5em">
+            <p>I'm 1.5em</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- rem class -->
+      <p class="content__text content__text_size_1rem">I'm 1rem</p>
+      <div class="content__text content__text_size_1rem">
+        <p>I'm 1rem</p>
+        <div>
+          <p>I'm 1rem</p>
+          <div>
+            <p>I'm 1rem</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
