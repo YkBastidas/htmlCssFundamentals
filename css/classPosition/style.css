@@ -1,0 +1,36 @@
+/* Apply border-box when using normalize.css */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.parent {
+  border: 2px black dotted;
+  display: inline-block;
+}
+
+.box {
+  display: inline-block;
+  background-color: antiquewhite;
+  width: 100px;
+  height: 100px;
+}
+
+#one {
+  background-color:aquamarine;
+}
