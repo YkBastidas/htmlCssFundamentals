@@ -1,0 +1,88 @@
+/* Apply border-box when using normalize.css */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* CSS Code */
+
+.pokemon-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pokemon{
+  border: 2px solid purple;
+  border-radius: 10px;
+  background-color: #86da86;
+  margin-bottom: 2vh;
+  max-width: 300px;
+}
+
+.pokemon__id {
+  display: flex;
+  background-color: #b0f3b0;
+  border-radius: inherit;
+  padding: 1vh 0;
+}
+
+.pokemon__title, .pokemon__number {
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 1vw;
+}
+
+.pokemon__title {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2vw;
+  flex: 2;
+  font-size: .8rem;
+}
+
+.pokemon__title h2 , .pokemon__number h2 {
+  margin: auto;
+}
+
+.pokemon__number {
+  display: flex;
+  flex: 1;
+  font-size: 1.6rem;
+}
+
+.pokemon__picture {
+  max-width: 250px;
+  background-color: white;
+  border-radius: inherit;
+  padding: 1.5rem;
+}
+
+.pokemon__picture img{
+  width: 100%;
+}
+
+.pokemon__attributes {
+  list-style: none;
+  padding: 0;
+}
