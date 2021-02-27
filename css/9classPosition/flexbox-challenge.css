@@ -77,7 +77,7 @@ header h1 {
   font-size: .8rem;
 }
 
-.pokemon__title h2 , .pokemon__number h2 {
+.pokemon__title h2, .pokemon__title h3 , .pokemon__number h2 {
   margin: auto;
 }
 
@@ -88,13 +88,13 @@ header h1 {
 }
 
 .pokemon__picture {
-  max-width: 28rem;
-  max-height: 28rem;
+  display: flex;
   background-color: white;
   border-radius: inherit;
-  padding: 1.5rem;
-  margin: auto;
+  padding: 1vh 3vw;
+  margin: 1vh 1vw;
   margin-top: 1vh;
+  width: 100%;
 }
 
 .pokemon__picture img{
