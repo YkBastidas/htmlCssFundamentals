@@ -36,21 +36,67 @@ header h1 {
 }
 
 .pokemon{
-  border: 2px solid purple;
+  border: 2px solid black;
   border-radius: 10px;
-  background-color: #86da86;
   margin-bottom: 2vh;
   max-width: 304px;
   padding: 1vh 2vw;
 }
 
+.pokemon.pokemon_background_green {
+  background-color: #86da86;
+}
+
+.pokemon.pokemon_background_blue {
+  background-color: #6890F0;
+}
+
+.pokemon.pokemon_background_orange {
+  background-color: #F08030;
+}
+
+.pokemon.pokemon_background_yellow {
+  background-color: #F8D030;
+}
+
+.pokemon.pokemon_border_purple {
+  border-color: purple;
+}
+
+.pokemon.pokemon_border_blue {
+  border-color: #445E9C;
+}
+
+.pokemon.pokemon_border_blue-magenta {
+  border-color: #6D5E9C;
+}
+
+.pokemon.pokemon_border_gold {
+  border-color: #A1871F;
+}
+
 .pokemon__container {
   display: flex;
-  background-color: #b0f3b0;
   border-radius: inherit;
   flex-flow: wrap;
   margin-bottom: 1vh;
   padding: 0;
+}
+
+.pokemon__container.pokemon__container_background_green {
+  background-color: #b0f3b0;
+}
+
+.pokemon__container.pokemon__container_background_blue {
+  background-color: #9DB7F5;
+}
+
+.pokemon__container.pokemon__container_background_orange {
+  background-color: #F5AC78;
+}
+
+.pokemon__container.pokemon__container_background_yellow {
+  background-color: #FAE078;
 }
 
 .pokemon__container.pokemon__container_main {
@@ -107,24 +153,32 @@ header h1 {
   margin-bottom: 1vh;
 }
 
-.pokemon__attribute.pokemon__attribute_type {
+.pokemon__attribute_type, .pokemon__attribute_normal{
   display: flex;
-  justify-content: center;
   width: 100%;
   padding: 1vh 1vw;
   margin: auto;
 }
 
+.pokemon__attribute_type {
+  justify-content: center;
+}
+
 .pokemon__attribute {
-  margin: auto 1vh;
+  margin: auto 0;
   font-size: 1.2rem;
+}
+
+.pokemon__attribute .pokemon__attribute {
+  margin: auto .5vh;
 }
 
 .pokemon__attribute_type .pokemon__attribute{
   color: white;
   background: gray;
   border-radius: .2rem;
-  padding: .2rem;
+  padding: .2rem .5rem;
+  font-weight: bold;
 }
 
 .pokemon__attribute.pokemon__attribute_type_grass {
@@ -135,8 +189,53 @@ header h1 {
   background-color: #A040A0;
 }
 
+.pokemon__attribute.pokemon__attribute_type_water {
+  background-color: #6890F0;
+}
+
+.pokemon__attribute.pokemon__attribute_type_fire {
+  background-color: #F08030;
+}
+
+.pokemon__attribute.pokemon__attribute_type_flying {
+  background-color: #A890F0;
+}
+
+.pokemon__attribute.pokemon__attribute_type_electric {
+  background-color: #F8D030;
+}
+
+.pokemon__attribute_normal {
+  justify-content: space-between;
+}
+
+.pokemon__attribute_normal .pokemon__attribute{
+  border-radius: .2rem;
+  padding: .2rem;
+  margin: auto;
+  font-size: 1.3rem;
+}
+
+.pokemon__attribute_ability_hidden:after {
+  display: flex;
+  margin-top: .5vh;
+  content: "Hidden Ability";
+  font-size: 1.1rem;
+}
+
 .pokemon__attributes {
   list-style: none;
   padding: 0;
   margin: 1vh;
+}
+
+.pokemon__title_flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pokemon__attribute_power {
+  background-color: orangered;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
