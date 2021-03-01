@@ -1,0 +1,276 @@
+/* Apply border-box when using normalize.css */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* CSS Code */
+
+header h1 {
+  text-align: center;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+}
+
+.pokemon{
+  border: 2px solid black;
+  border-radius: 10px;
+  max-width: 304px;
+  padding: 0.4rem 0.6rem;
+  margin: 0 5vw;
+  margin-bottom: 2vh;
+}
+
+@media all and (min-width: 650px) {
+  .pokemon {
+    margin: 0 0 1vh 0;
+  }
+}
+
+/* Background Colors */
+.pokemon.pokemon_background_green {
+  background-color: #86da86;
+}
+
+.pokemon.pokemon_background_blue {
+  background-color: #6890F0;
+}
+
+.pokemon.pokemon_background_orange {
+  background-color: #F08030;
+}
+
+.pokemon.pokemon_background_yellow {
+  background-color: #F8D030;
+}
+
+/* Border Colors */
+.pokemon.pokemon_border_purple {
+  border-color: purple;
+}
+
+.pokemon.pokemon_border_blue {
+  border-color: #445E9C;
+}
+
+.pokemon.pokemon_border_blue-magenta {
+  border-color: #6D5E9C;
+}
+
+.pokemon.pokemon_border_gold {
+  border-color: #A1871F;
+}
+
+.pokemon__container {
+  display: flex;
+  border-radius: inherit;
+  flex-flow: wrap;
+  margin-bottom: 1vh;
+  padding: 0;
+}
+
+/* Container Styles */
+
+/* Background Container Colors */
+
+.pokemon__container.pokemon__container_background_green {
+  background-color: #b0f3b0;
+}
+
+.pokemon__container.pokemon__container_background_blue {
+  background-color: #9DB7F5;
+}
+
+.pokemon__container.pokemon__container_background_orange {
+  background-color: #F5AC78;
+}
+
+.pokemon__container.pokemon__container_background_yellow {
+  background-color: #FAE078;
+}
+
+/* Container Measures */
+
+.pokemon__container.pokemon__container_main {
+  padding: 0.6rem 0.3rem;
+}
+
+.pokemon__container.pokemon__container_secondary .pokemon__title{
+  padding: 0;
+}
+
+.pokemon__attribute_background_white {
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 0.3rem;
+}
+
+.pokemon__title {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: .2rem;
+  flex: 4;
+  font-size: .8rem;
+}
+
+.pokemon__title h2, .pokemon__title h3 , .pokemon__number h2 {
+  margin: auto;
+}
+
+.pokemon__title.pokemon__title_block {
+  flex-flow: column;
+}
+
+.pokemon__title_block_long {
+  flex: 6
+}
+
+.pokemon__number {
+  display: flex;
+  flex: 1;
+  font-size: 1.6rem;
+}
+
+.pokemon__number h2 {
+  font-size: 2rem;
+  padding: 0 .5rem;
+}
+
+.pokemon__picture {
+  display: flex;
+  background-color: white;
+  border-radius: inherit;
+  padding: 0.6rem 0.9rem;
+  margin: 0 0.3rem;
+  margin-top: 0.6rem;
+  width: 100%;
+}
+
+.pokemon__picture img{
+  width: 100%;
+}
+
+.pokemon__title .pokemon__title_secondary{
+  font-size: 1.5rem;
+  width: 100%;
+  margin-bottom: 1vh;
+}
+
+.pokemon__attribute_type, .pokemon__attribute_normal{
+  display: flex;
+  width: 100%;
+  padding: 1vh 1vw;
+  margin: auto;
+}
+
+.pokemon__attribute_type {
+  justify-content: center;
+}
+
+.pokemon__attribute {
+  margin: auto 0;
+  font-size: 1.2rem;
+}
+
+.pokemon__attribute .pokemon__attribute {
+  margin: auto .5vh;
+}
+
+.pokemon__attribute_type .pokemon__attribute{
+  color: white;
+  background: gray;
+  border-radius: .2rem;
+  padding: .2rem .5rem;
+  font-weight: bold;
+}
+
+.pokemon__attribute.pokemon__attribute_type_grass {
+  background-color: #78C850;
+}
+
+.pokemon__attribute.pokemon__attribute_type_poison {
+  background-color: #A040A0;
+}
+
+.pokemon__attribute.pokemon__attribute_type_water {
+  background-color: #6890F0;
+}
+
+.pokemon__attribute.pokemon__attribute_type_fire {
+  background-color: #F08030;
+}
+
+.pokemon__attribute.pokemon__attribute_type_flying {
+  background-color: #A890F0;
+}
+
+.pokemon__attribute.pokemon__attribute_type_electric {
+  background-color: #F8D030;
+}
+
+.pokemon__attribute_normal {
+  justify-content: space-between;
+}
+
+.pokemon__attribute_normal .pokemon__attribute{
+  border-radius: .2rem;
+  padding: .2rem;
+  margin: auto;
+  font-size: 1.3rem;
+}
+
+.pokemon__attribute_ability_hidden:after {
+  display: flex;
+  margin-top: .5vh;
+  content: "Hidden Ability";
+  font-size: 1.1rem;
+}
+
+.pokemon__attributes {
+  list-style: none;
+  padding: 0;
+  margin: 1vh;
+}
+
+.pokemon__title_flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pokemon__attribute_power {
+  background-color: orangered;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+@media all and (min-width: 360px) {
+  .pokemon-list {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
