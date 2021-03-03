@@ -19,10 +19,12 @@ html {
 
 body {
   font-size: 1.6rem;
+    background: top / cover no-repeat fixed url(./images/civ5background.jpeg) #eed6bc;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .site-header {
-  background-color: #795b32;
+  background-color: #491a11;
 }
 
 .site-header__logo {
@@ -51,4 +53,75 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 2rem;
+}
+
+.content-container {
+  max-width: 80%;
+  background-color: #c8a57d;
+  margin: auto;
+}
+
+.game-info {
+  margin: 2rem;
+  background-color: #bf9871;
+  display: inline-block;
+  text-align: left;
+  width: fit-content;
+}
+
+.game-info h2 {
+  margin: 1rem;
+}
+
+.game-info__group {
+  margin-top: 1rem;
+  border-bottom: 0.1rem solid #b0855e;
+}
+
+.game-info__group:last-child {
+  margin-bottom: 1rem;
+  border: 0;
+}
+
+.game-info__term-list {
+  display: inline-block;
+  margin-left: 1rem;
+  width: 14rem;
+  font-weight: 600;
+  vertical-align: top;
+}
+
+.game-info__details-list {
+  display: inline-block;
+  margin: 0;
+}
+
+.game-info__details-list.game-info__details-list_group span{
+  display: block;
+}
+
+.game-info__details-list_sub-title {
+  font-weight: 600;
+}
+
+.game-info__details-list_sub-title:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.content {
+  display: inline-block;
+  width: 60%;
+  vertical-align: top;
+}
+
+.content__section {
+  text-align: justify;
+}
+
+.header__text {
+  border-bottom: .1rem solid #967c5e;
+}
+
+.header__reference {
+  margin-left: 2rem;
 }
