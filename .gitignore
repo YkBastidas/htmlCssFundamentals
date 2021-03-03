@@ -1,5 +1,6 @@
 # Images files
 *.jpg
+*.jpeg
 *.png
 
 # Audio Files
