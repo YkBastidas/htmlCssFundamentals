@@ -1,0 +1,30 @@
+.block-element {
+  /*  'display is used to set the element behaviour'
+  * the 'block' value allow the content to use 100% of the available width */
+  display: block;
+
+
+  background-color: green;
+  margin: 10px;
+  padding: 20px;
+}
+
+.nav {
+  background-color: peachpuff;
+  padding: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+.nav li {
+  /* 'inline-block' combine the best of 'inline' and 'block' 
+    * it occupies only the space of the content and allows to use vertical margins
+    * it also allows you to modify the width and height of the element
+  */
+  display: inline-block;
+  
+  font-size: 20px;
+  margin: 10px 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}

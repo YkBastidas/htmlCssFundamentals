@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Display</title>
+  </head>
+  <body>
+    <main>
+      <div class="block-element">
+        This is a 'div' tag
+      </div>
+      <p class="block-element">
+        This is a 'p' tag
+      </p>
+      <div class="block-element">
+        <p class="paragraph">I'm a paragraph</p>
+        <p class="paragraph">I'm a paragraph</p>
+        <p class="paragraph">I'm a paragraph</p>
+      </div>
+
+      <!-- These span tags have an 'inline' display so they are next to each other
+        * only uses the space that its content needs
+        * only allows horizontal margin / padding, not vertical 
+        * doesn't support widht nor height, it grows only with the content -->
+      <span>I'm a 'span' tag</span>
+      <span>I'm a 'span' tag</span>
+
+      <ul class="nav">
+        <!-- lists items (li) have 'display: list-item' as default 
+           * list-item means that every item should be in a new line (similar to block) -->
+        <li>Home</li>
+        <li>Courses</li>
+        <li>Teachers</li>
+        <li>Blog</li>
+      </ul>
+    </main>
+  </body>
+</html>
