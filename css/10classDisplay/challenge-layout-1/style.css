@@ -1,0 +1,54 @@
+/* Apply border-box when using normalize.css */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* CSS Code */
+
+body {
+  font-size: 1.6rem;
+}
+
+.site-header {
+  background-color: #795b32;
+}
+
+.site-header__logo {
+  display: inline-block;
+  width: 20%;
+  margin: .5rem 1rem;
+  vertical-align: middle;  
+}
+
+.site-header__logo img {
+  width: 100%;
+}
+
+.site-header__nav-menu {
+  display: inline-block;
+  vertical-align: middle;
+  width: 75%;
+  text-align: right;
+}
+
+.site-header__nav-menu li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2rem;
+}
