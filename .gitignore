@@ -1,2 +1,7 @@
+# Images files
 *.jpg
+*.jpeg
+*.png
+
+# Audio Files
 *.mp4

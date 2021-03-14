@@ -1,0 +1,63 @@
+/* Apply border-box when using normalize.css */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* CSS Code */
+
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  border: 0.3rem solid black;
+  /* we use 'display: flex' in the parent so the children have a flexible behaviour 
+    * by default, set the elements in one row, it can be changed to columns with 'flex-direction: column'
+    * it can order the elements in an opposite way with 'row-reverse' or 'column-reverse'
+    * 'flex-wrap: wrap' is used to automatically organize the rows that doesn't fit in the viewport
+    * 'justify-content' aligns the items in the x-axis with values like 'start', 'center', 'space-around', etc
+  */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  width: 10rem;
+  height: 10rem;
+}
+
+.box1 {
+  background-color: blue;
+}
+
+.box2 {
+  background-color: blueviolet;
+}
+.box3 {
+  background-color: burlywood;
+}
+
+.box4 {
+  background-color: cadetblue;
+}
+
+.box5 {
+  background-color: coral;
+}
+
+.box6 {
+  background-color: salmon;
+}
