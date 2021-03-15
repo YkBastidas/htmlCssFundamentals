@@ -30,21 +30,44 @@ body {
     * 'justify-content' aligns the items in the x-axis with values like 'start', 'center', 'space-around', etc
   */
   display: flex;
+  /* height: 50vh; */
   flex-wrap: wrap;
+  /*
   justify-content: center;
+  */
+
+  /* 'align-items' is used to vertically align flex components
+    * 'center', align items to the middle of available height
+    * 'flex-end' align items to the botom and 'flex-start' to the top,
+    * 'stretch' grow the items height to the maximum available,
+    * 'baseline' shrinks the height to the content of the items
+    * stretch and baseline does nothing if the items have a fixed height
+  */
+  align-items: flex-start; 
 }
 
 .box {
-  width: 10rem;
+  /* width: 10rem; */
   height: 10rem;
+  flex-basis: 10rem;
+  flex-grow: 1;
 }
 
 .box1 {
   background-color: blue;
+  /* 'order' it is used to set the items in a specified order
+    * if no 'order' is specified the items will be first than ordered ones  
+  */
+  /* order: 1; */
+
+  /* 'flex-grow' uses the available viewport space to enlarge the width of the item with a value as factor*/
+  /* flex-grow: 1; */
 }
 
 .box2 {
   background-color: blueviolet;
+  /* order: 3; */
+  /* flex-grow: 1; */
 }
 .box3 {
   background-color: burlywood;
@@ -56,8 +79,10 @@ body {
 
 .box5 {
   background-color: coral;
+  /* order: 4; */
 }
 
 .box6 {
   background-color: salmon;
+  /* order: 2; */
 }
