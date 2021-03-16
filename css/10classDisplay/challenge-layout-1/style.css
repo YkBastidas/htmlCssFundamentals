@@ -19,8 +19,17 @@ html {
 
 body {
   font-size: 1.6rem;
-    background: top / cover no-repeat fixed url(./images/civ5background.jpeg) #eed6bc;
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  background: left top / cover no-repeat fixed url(./images/civ5background.jpeg) #eed6bc;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .site-header, footer {
@@ -28,54 +37,69 @@ body {
 }
 
 .site-header__logo {
-  display: inline-block;
-  width: 20%;
-  margin: .5rem 1rem;
-  vertical-align: middle;  
+  width: 95vw;
+  min-height: 50px;
+  max-width: 200px;
+  margin: 1rem 0;
 }
 
-.site-header__logo img {
+figure img {
   width: 100%;
+  margin: 0;
 }
 
 .site-header__nav-menu {
-  display: inline-block;
-  vertical-align: middle;
-  width: 75%;
-  text-align: right;
+  margin-bottom: 1vh;
+  width: 100%;
+}
+
+.site-header__nav-menu ul{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
 .site-header__nav-menu li{
-  list-style: none;
-  display: inline-block;
-  margin-right: 2rem;
+  display: block;
+  margin: 0 .5rem;
   color: white;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .content-container {
-  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: #c8a57d;
-  margin: auto;
 }
 
 .game-info {
-  margin: 2rem;
+  margin: 3rem 1rem;
   background-color: #bf9871;
-  display: inline-block;
   text-align: left;
-  width: fit-content;
 }
 
 .game-info h2 {
   margin: 1rem;
+  text-align: center;
+}
+
+.game-info__cover-image {
+  margin: 0;
 }
 
 .game-info__group {
-  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-bottom: 0.5rem;
   border-bottom: 0.1rem solid #b0855e;
+  font-size: 1.1rem;
+  padding-right: .5rem;
 }
 
 .game-info__group:last-child {
@@ -84,16 +108,15 @@ body {
 }
 
 .game-info__term-list {
-  display: inline-block;
   margin-left: 1rem;
-  width: 14rem;
-  font-weight: 600;
+  font-weight: 800;
   vertical-align: top;
+  text-transform: uppercase;
 }
 
 .game-info__details-list {
-  display: inline-block;
   margin: 0;
+  width: 11.5rem;
 }
 
 .game-info__details-list.game-info__details-list_group span{
@@ -109,17 +132,20 @@ body {
 }
 
 .content {
-  display: inline-block;
-  width: 60%;
   vertical-align: top;
+  margin: 0 1rem;
 }
 
-.content__section {
+.content__section p {
   text-align: justify;
 }
 
 .header__text {
   border-bottom: .1rem solid #967c5e;
+  font-size: 2em;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
 }
 
 .header__reference {
@@ -127,24 +153,52 @@ body {
 }
 
 footer {
+  display: flex;
+  flex-wrap: wrap;
   color: white;
   text-align: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 footer span {
-  font-size: 2rem;
+  display: block;
+  font-size: 1.5rem;
+  width: 100%;
 }
 
 footer span:not(:first-child) {
-  margin-left: 2rem;
-}
-
-footer span:first-child::after {
-  margin-left: 2rem;
-  content: "♟";
+  margin-top: .5rem;
 }
 
 footer span a:visited {
   color: white
+}
+
+.footer__chess-icon {
+  display: none;
+}
+
+.footer__social a {
+  margin: 0 .5rem;
+}
+
+@media all and (min-width: 768px) {
+
+  .content {
+    width: 40%;
+    margin: 0 3rem;
+  }
+
+  footer {
+    justify-content: space-evenly;
+  }
+
+  footer.footer span {
+    margin-top: 0;
+    width: auto;
+  }
+
+  .footer__chess-icon {
+    display: inline-block;
+  }
 }
