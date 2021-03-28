@@ -1,0 +1,48 @@
+/* Apply border-box when using normalize.css */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* CSS Code */
+
+:root {
+  /* :root references to html, i.e. the whole file */
+  --primary-color: #003476;
+  --secondary-color: #b4d2f7;
+  --header-size: 4rem;
+  --font: 1.8rem;
+}
+
+header {
+  width: 100vw;
+  height: 15vh;
+  background-color: var(--primary-color);
+}
+
+main {
+  width: 100vw;
+  height: 70vh;
+  font-size: var(--font);
+}
+
+h1 {
+  font-size: var(--header-size);
+}
+
+footer {
+  width: 100vw;
+  height: 15vh;
+  background-color: var(--secondary-color);
+}
