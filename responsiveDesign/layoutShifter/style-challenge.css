@@ -1,0 +1,138 @@
+/* Apply border-box when using normalize.css */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS Code */
+
+:root {
+  /* :root references to html, i.e. the whole file */
+  --light-blue: #84cbde;
+  --dark-blue: #4887a6;
+}
+
+body {
+  font-family: "Alegreya", serif;
+}
+
+.container,
+.header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  align-items: center;
+  padding: 1rem;
+  background-color: black;
+}
+
+.header h1 {
+  width: 50%;
+  text-align: center;
+  color: var(--light-blue);
+  font-style: italic;
+  font-size: 3rem;
+}
+
+.main-menu {
+  width: 50%;
+}
+
+.main-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-menu ul li {
+  list-style: none;
+  width: calc(50% - 1rem);
+  text-align: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--light-blue);
+  box-shadow: 3px 3px 8px 1px var(--dark-blue);
+  font-size: 3.5vw;
+  font-weight: 700;
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5 {
+  width: 100%;
+  min-width: 150px;
+  height: 150px;
+}
+
+.c1 {
+  background-color: #003476;
+}
+
+.c2 {
+  background-color: #0062d2;
+}
+
+.c3 {
+  background-color: #b4d2f7;
+}
+
+.c4 {
+  background-color: #d5dfef;
+  height: auto;
+}
+
+.c5 {
+  background-color: #dfe1e5;
+}
+
+@media (min-width: 600px) {
+  .c1 {
+    width: 25%;
+  }
+
+  .c4 {
+    width: 75%;
+  }
+
+  .c5 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .c1 {
+    width: 50%;
+    order: 1;
+  }
+
+  .c4 {
+    width: 100%;
+  }
+
+  .c5 {
+    width: 50%;
+    order: 2;
+  }
+}
